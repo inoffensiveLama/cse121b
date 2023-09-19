@@ -31,8 +31,12 @@ imageElement.setAttribute("alt", `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
 const food = ["Burger", "Fries", "Pizza"];
-
-
-
-
+foodElement.innerHTML = `${food}`;
+let singleFood = "Maultaschen";
+food.push(singleFood);
+foodElement.innerHTML += `<br>${food}`;
+food.shift();
+foodElement.innerHTML += `<br>${food}`;
+food.pop();
+foodElement.innerHTML += `<br>${food}`;
 
