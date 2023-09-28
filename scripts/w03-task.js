@@ -60,13 +60,31 @@ document.querySelector("#year").value = currentYear;
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
+let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+
+document.querySelector("#array").innerHTML = numbersArray;
+
 
 /* Output Odds Only Array */
+let odds = numbersArray.filter(n => n%2)
+document.querySelector("#odds").innerHTML = odds;
+
 
 /* Output Evens Only Array */
+let evens = numbersArray.filter(n => n % 2 === 0);
+document.querySelector("#evens").innerHTML = evens;
+
 
 /* Output Sum of Org. Array */
+let sum = numbersArray.reduce((accumulator, currentValue) => accumulator + currentValue);
+document.querySelector("#sumOfArray").innerHTML = sum;
+
 
 /* Output Multiplied by 2 Array */
+let multiplied = numbersArray.map(number => number * 2);
+document.querySelector("#multiplied").innerHTML = multiplied;
+
 
 /* Output Sum of Multiplied by 2 Array */
+let sumOfMultiplied = multiplied.reduce((accumulator, currentValue) => accumulator + currentValue);
+document.querySelector("#sumOfMultiplied").innerHTML = sumOfMultiplied;
