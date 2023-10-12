@@ -13,7 +13,7 @@ const displayTemples = (temples) => {
         h3Element.textContent = temple.templeName;
 
         const imgElement = document.createElement("img");
-        imgElement.src = temple.imageURL;
+        imgElement.src = temple.imageUrl;
         imgElement.alt = temple.location;
         
         articleElement.appendChild(h3Element);
