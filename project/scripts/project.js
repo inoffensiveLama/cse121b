@@ -12,19 +12,19 @@ const displayCharacters = (characters) => {
         h3Element.textContent = character.name;
 
         const heightElement = document.createElement("p");
-        heightElement.textContent = "Heigth: " + character.height;
+        heightElement.textContent = `Height: ${character.height}`;
 
         const weightElement = document.createElement("p");
-        weightElement.textContent = "Weight: " + character.mass;
+        weightElement.textContent = `Weight: ${character.mass}`;
 
         const genderElement = document.createElement("p");
-        genderElement.textContent = "Gender: " + character.gender;
+        genderElement.textContent = `Gender: ${character.gender}`;
 
         const hairElement = document.createElement("p");
-        hairElement.textContent = "Hair Color: " + character.hair_color;
+        hairElement.textContent = `Hair Color: ${character.hair_color}`;
 
         const birthElement = document.createElement("p");
-        birthElement.textContent = "Birth Year: " + character.birth_year;
+        birthElement.textContent = `Birth Year: ${character.birth_year}`;
         
         articleElement.appendChild(h3Element);
         articleElement.appendChild(heightElement);
