@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Open+Sans:wght@300;700&family=Oswald:wght@300&display=swap');
+
+body {
+    background-color: #3C3D42;
+    color: #ffff00;
+    font-family: "Open Sans", "Cutive Mono", Lato, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+#characters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
