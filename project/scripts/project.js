@@ -1,6 +1,8 @@
 const characterElement = document.querySelector("#characters");
 var characterList = [];
 
+import { reset } from "./reset.js";
+
 /* async displayCharacters Function */
 const displayCharacters = (characters) => {
     characters.forEach(character => {
@@ -51,13 +53,6 @@ const getCharacters = async () => {
         console.error("Error fetching character data:", error);
     }
 }
-
-/* reset Function */
-function reset(elementID)
-{
-    document.getElementById(elementID).innerHTML = "";
-}
-
 
 /* sortBy Function */
 function sortBy(characters){
